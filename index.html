@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAKHTA!</title>
+
+<link rel="stylesheet" href="scrollbar.css">
+
+<link rel="icon" href="./IMG/tesla.ico" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="zfisher!.css">
+    <link rel="stylesheet" href="FCT.css">
+    <link rel="stylesheet" href="anim.css">
+    <link rel="stylesheet" href="hvr.css">
+    <link rel="stylesheet" href="FCT4.css">
+    <link rel="stylesheet" href="USRT.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+     <div class="section">
+        <div class="cortina"><img src="./IMG/zfisher.png"></div>
+        <div class="news-header" id="news-header">
+            <div id="header-left">
+               <div id="logo-container">
+                <img src="./IMG/lakhta.png" alt="ZFISHER!" id="header-logo">
+            </div>
+                <div class="filter-buttons" id="filter-buttons">
+                    <button id="sort-by-date">Por Fecha</button>
+                    <button id="sort-by-name">Por Nombre</button>
+                    <button id="sort-by-color">Por Colores</button>
+                </div>
+            </div>
+            <div>
+                <button class="button-left" id="toggle-button" onclick="toggleFilterButtons()">FILTRO</button>
+                <button class="button-left" id="search-button" onclick="openSearchContainer()">BUSCAR</button>
+                <button class="button-left" id="calendar-button" onclick="openCalendar()">CALENDARIO</button>
+                <button class="button-left" id="reset-button" onclick="resetItemsOrder()">REINICIAR</button>
+            </div>
+        </div>
+        <div class="search-container" id="search-container">
+            <input type="text" id="search-input" placeholder="Buscar una noticia...">
+            <button id="date-button" onclick="toggleSearchMode()">FECHA</button>
+            <button id="close-search-button" onclick="closeSearchContainer()">CERRAR</button>
+        </div>
+        <div class="columns-container" id="columns-container">
+            <div class="column-item" data-date="01/10/2023" data-color="rosa">
+                <div class="column-item-text">MEDIO AMBIENTE</div>
+                <div class="column-item-image"><img src="./IMG/medio-ambiente.jpg" alt="Brave"></div>
+            </div>
+            <div class="column-item" data-date="01/11/2023" data-color="morado">
+                <div class="column-item-text">VISITA AL TEATRO</div>
+                <div class="column-item-image"><img src="./NOTICIAS/3-1-1536x1152.jpg" alt="Brave"></div>
+            </div>
+            <div class="column-item" data-date="15/09/2023" data-color="verde">
+                <div class="column-item-text">VISITA AL CONVENTO</div>
+                <div class="column-item-image"><img src="./NOTICIAS/3-2.jpeg"></div>
+            </div>
+            <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text">SALÓN DE RECREATIVOS</div>
+                <div class="column-item-image"><img src="./NOTICIAS/3-150x150.jpeg"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="rosa">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="verde">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="morado">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+             <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+            <div class="column-item" data-date="20/08/2023" data-color="azul">
+                <div class="column-item-text"></div>
+                <div class="column-item-image"></div>
+            </div>
+        </div>
+
+
+
+        
+   <footer>
+    <!-- LEFT -->
+    <div class="footer-img-left">
+        <img src="./IMG/zfisher.png" class="footer-img" alt="">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-img-right">
+        <img src="./IMG/lakhta.png" class="footer-img" alt="">
+    </div>
+</footer>
+
+
+    
+
+    
+    <!-- <script src="NewsColorNoticias2.js"></script> --> <!-- Maneja el color de overlay al pulsar una noticia -->
+    <script src="FT5.js"></script>  <!-- Maneja todo lo relacionado con el footer -->
+    <script src="FCT.js"></script>    <!-- Maneja la capa inicial con insignia circular -->
+    <script src="BR7.js"></script>  <!-- Maneja el cambio de color de todos los bordes y scrollbar e inclusive un overlay personalizado para cada noticia así como sus textos  -->
+    <script src="BRY.js"></script> <!-- Maneja el cambio de color de cada imagen en cada noticia -->
+    <script src="FTXT.js"></script>  <!-- Maneja el cambio de color de fondo en el texto de cada noticia -->
+    <script src="F2.js"></script>   <!-- Maneja el cambio de color interno de cada noticia asi como sus bordes respecto al contenedor de texto -->
+    <script src="BD.js"></script>   <!-- Maneja el cambio de color interno de cada noticia asi como sus bordes respecto al contenedor de noticias -->
+    <script src="FDI.js"></script>   <!-- Maneja el cambio de color interno de cada fondo respecto al contenedor de noticias -->
+    <script src="NT-V.js"></script> <!-- Maneja la visibilidad de un overlay que permite leer mas informacion sobre las noticias -->
+    <script src="CLN.js"></script>   <!-- Maneja el calendario -->
+    <script src="SPR.js"></script>  <!-- Maneja la ejecucion de todos los botones y calendario -->
+    <script src="SPR-2.js"></script> <!-- Maneja en concreto la lógica del botón BUSCAR -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> <!-- Posibilita usar un calendario -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* Personalizar la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra */
+}
+
+/* Fondo de la barra (track) - ahora negro */
+::-webkit-scrollbar-track {
+    background: #000000; /* Fondo negro */
+    border-radius: 6px; /* Bordes redondeados (opcional) */
+}
+
+/* Barra deslizante (thumb) - roja */
+::-webkit-scrollbar-thumb {
+    background: #ff0000; /* Color rojo */
+    border-radius: 6px; /* Bordes redondeados */
+}
+
+/* Efecto hover en la barra deslizante */
+::-webkit-scrollbar-thumb:hover {
+    background: #cc0000; /* Rojo más oscuro al pasar el mouse */
+}
+
+
+html {
+    scrollbar-width: thin; /* Grosor del scroll */
+    scrollbar-color: #ff0000 #000000; /* thumb rojo | track negro */
+}
